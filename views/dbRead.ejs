@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <link href="/public/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <title>Hyper Smash</title>
+    <link rel="shortcut icon" type="image/png" href="/public/assets/Images/Badminton_court_Booking.PNG">
+</head>
+<body>
+    <img class="logo" src="/public/assets/Images/Badminton_court_Booking.PNG" alt="Hyper Smash">
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="/">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a class="active" href="/members">
+                    <span>Members</span>
+                </a>
+            </li>
+            <li>
+                <a href="/coach_booking">
+                    <span>Coach Booking</span>
+                </a>
+            </li>
+            <li>
+                <a href="/court_booking">
+                    <span>Court booking</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about">
+                    <span>About Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Members</h1>
+    <table class="table table- hover">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+
+        <% if (userData.lenght!=0) { var i=1; userData.forEach(function(data) {%>
+        <tr>
+            <td><%=data.id %></td>
+            <td><%=data.name %></td>
+            <td><%=data.email %></td>
+        </tr>
+        <% i++; }) %> <% } else{ %>
+        <tr>
+            <td colspan="7">No Data Found</td>
+        </tr>
+        <% } %>
+    </table>
+
+</body>

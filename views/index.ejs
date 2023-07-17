@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/public/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <title>Hyper Smash</title>
+    <link rel="shortcut icon" type="image/png" href="/public/assets/Images/Badminton_court_Booking.PNG">
+</head>
+<body>
+    <img class="logo" src="/public/assets/Images/Badminton_court_Booking.PNG" alt="Hyper Smash">
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a class="active" href="/">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="/members">
+                    <span>Members</span>
+                </a>
+            </li>
+            <li>
+                <a href="/coach_booking">
+                    <span>Coach Booking</span>
+                </a>
+            </li>
+            <li>
+                <a href="/court_booking">
+                    <span>Court booking</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about">
+                    <span>About Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Hyper Smash</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore atque, facere ipsum amet natus facilis veritatis illum mollitia, quas praesentium labore a hic rerum eveniet laudantium voluptatum ipsam! Voluptates.
+    </p>
+
+    <div class="forms">
+
+        <form action="/add" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </div>
+            <button type="submit" class="button">Add</button>
+        </form>
+
+        <form action="/delete" method="post">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" name="id">
+            </div>
+            <button type="submit" class="button">Delete</button>
+        </form>
+
+        <form action="/update" method="post">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" name="id">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </div>
+            <button type="submit" class="button">Update</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
